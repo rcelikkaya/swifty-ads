@@ -37,7 +37,7 @@ struct SwiftyAdsConfiguration: Decodable {
 extension SwiftyAdsConfiguration {
     
     var ids: [String] {
-        [bannerAdUnitId, interstitialAdUnitId, rewardedVideoAdUnitId].filter { !$0.isEmpty }
+        [bannerAdUnitId, interstitialAdUnitId, rewardedVideoAdUnitId, nativeAdUnitId].filter { !$0.isEmpty }
     }
     
     var adNetworks: String {
